@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You ❤️</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #200b20, #5b183d, #171329);
+  color: white;
+  font-family: Georgia, serif;
+  text-align: center;
+  padding: 24px;
+}
+.card { max-width: 420px; }
+.heart { font-size: 65px; animation: beat 1s infinite; }
+h1 { color: #ffb5d5; font-size: 34px; }
+p { line-height: 1.9; font-size: 17px; }
+button {
+  background: #ffb5d5;
+  color: #35152b;
+  border: none;
+  border-radius: 25px;
+  padding: 14px 25px;
+  font-size: 16px;
+  margin-top: 15px;
+}
+#message { display: none; margin-top: 22px; }
+@keyframes beat {
+  50% { transform: scale(1.2); }
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="heart">❤️</div>
+  <h1>Happy Birthday, My Love</h1>
+  <p>I made this little place just for you.</p>
+  <p>Even from far away, you have a special place in my heart.</p>
+  <button onclick="document.getElementById('message').style.display='block';this.style.display='none'">
+    Open your surprise 💌
+  </button>
+  <div id="message">
+    <p>You make my world a little brighter.</p>
+    <p>Happy birthday. I'm so lucky to have you. ❤️</p>
+    <p>With love, always.</p>
+  </div>
+</div>
+</body>
+</html>
